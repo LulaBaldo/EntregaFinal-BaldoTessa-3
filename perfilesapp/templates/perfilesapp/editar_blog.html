@@ -38,8 +38,8 @@ Editar Blog
             <p>Texto: </p>
             <p>{{form.texto}} </p>
             <p>Imagen: {{form.imagen}}</p>
-            <p>Autor: {{form.autor}}</p>
-            <p>Fecha: {{form.fecha}}</p>
+            <p>Autor: {{blog_post.autor}}</p>
+            <p>Fecha: {{blog_post.fecha}}</p>
         
             <a href="{% url 'blog' %}"><button>Editar Blog</button></a>
         </form>

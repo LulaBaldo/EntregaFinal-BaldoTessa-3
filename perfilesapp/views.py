@@ -439,7 +439,7 @@ def editar_blog(request, blog_id):
                                               "fecha":blog.fecha,
                                               })
     
-    return render(request, "perfilesapp/editar_blog.html", {"form":formulario_vacio}) 
+    return render(request, "perfilesapp/editar_blog.html", {"form":formulario_vacio, "blog_post": blog}) 
  
 def blog_detail(request, blog_id):
     blog = Blog.objects.get(id=blog_id)   
